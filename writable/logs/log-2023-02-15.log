@@ -1,0 +1,238 @@
+INFO - 2023-02-15 10:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:03:40 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-02-15 10:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:03:51 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2023-02-15 10:03:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '321', 'febi', 3306, '', 0)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\febi\app\Controllers\Login.php(50): App\Models\Usersmodel->checklogin('hari.handika@il...', '81dc9bdb52d04dc...')
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->checklogin()
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\febi\app\Controllers\Login.php(50): App\Models\Usersmodel->checklogin('hari.handika@il...', '81dc9bdb52d04dc...')
+#5 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->checklogin()
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-15 10:03:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_nm` = :user_nm:
+AND `pwd0` = :pwd0:', [...], false)
+ 3 APPPATH\Models\Usersmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(50): App\Models\Usersmodel->checklogin('hari.handika@ilcs.co.id', '81dc9bdb52d04dc20036dbd8313ed055')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->checklogin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+INFO - 2023-02-15 10:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:03:54 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-02-15 10:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:03:58 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2023-02-15 10:03:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '321', 'febi', 3306, '', 0)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\febi\app\Controllers\Login.php(50): App\Models\Usersmodel->checklogin('', 'd41d8cd98f00b20...')
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->checklogin()
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\febi\app\Controllers\Login.php(50): App\Models\Usersmodel->checklogin('', 'd41d8cd98f00b20...')
+#5 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->checklogin()
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-15 10:03:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_nm` = :user_nm:
+AND `pwd0` = :pwd0:', [...], false)
+ 3 APPPATH\Models\Usersmodel.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(50): App\Models\Usersmodel->checklogin('ROOTPATH\\public', 'd41d8cd98f00b204e9800998ecf8427e')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->checklogin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+INFO - 2023-02-15 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:04:00 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-02-15 10:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:04:01 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+INFO - 2023-02-15 10:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:04:31 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2023-02-15 10:04:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '321', 'febi', 3306, '', 0)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\febi\app\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\febi\app\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+#5 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-15 10:04:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `person` `a`
+LEFT JOIN `users` `b` ON `b`.`person_id` = `a`.`person_id`
+WHERE `a`.`status_cd` = :a.status_cd:
+AND `a`.`cellphone` = :a.cellphone:', [...], false)
+ 3 APPPATH\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+INFO - 2023-02-15 10:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:04:36 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2023-02-15 10:04:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '321', 'febi', 3306, '', 0)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\febi\app\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\febi\app\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+#5 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-15 10:04:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `person` `a`
+LEFT JOIN `users` `b` ON `b`.`person_id` = `a`.`person_id`
+WHERE `a`.`status_cd` = :a.status_cd:
+AND `a`.`cellphone` = :a.cellphone:', [...], false)
+ 3 APPPATH\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+INFO - 2023-02-15 10:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:05:05 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
+ERROR - 2023-02-15 10:05:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '321', 'febi', 3306, '', 0)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\febi\app\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\febi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\febi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\febi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\febi\app\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\febi\app\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+#5 C:\xampp\htdocs\febi\system\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+#6 C:\xampp\htdocs\febi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\febi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\febi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\febi\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-15 10:05:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `person` `a`
+LEFT JOIN `users` `b` ON `b`.`person_id` = `a`.`person_id`
+WHERE `a`.`status_cd` = :a.status_cd:
+AND `a`.`cellphone` = :a.cellphone:', [...], false)
+ 3 APPPATH\Models\Usersmodel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(105): App\Models\Usersmodel->getbyCellphone('085269785755')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->simpanregister()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+INFO - 2023-02-15 10:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-02-15 10:05:07 --> Session: Sessions is enabled, and one exists.Please don't $session->start();
